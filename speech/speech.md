@@ -1,0 +1,13 @@
+- Mother
+- JOAN’s character : everyone who has know her will describe her in the same way
+- Go getter 
+- Serious person
+- At school at Vienna, foreign students from Kenya wanted to fight 
+- Joan wanted to defend the person bullying from the foreign guys
+- The administration 
+- Joan called parents to help rescue Joel ??
+- She is very daring … 
+- Very smart, stylish, and appearance 
+- And she is a good cook 
+- So Daniel is in business 
+- Joan is very organized and the mother-in-oaw 

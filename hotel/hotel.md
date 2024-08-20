@@ -5,3 +5,7 @@
    - 110 Ocean Ave N Long Branch, NJ 07740
    - 37 miles, 1 hour, on `i195W` or `NJ18-N`
    - 1 hour 15 min from Princeton (Alex)
+- Sheraton Edison: $233/Night
+   - 23.4 miles
+- Delta Hotels Woodbridge: $194/night
+   - 23.8 miles  

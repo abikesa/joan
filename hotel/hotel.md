@@ -3,3 +3,4 @@
 - TownePlace Suites by Marriott Cranburgy South Brunswick: $469
    - 2535 Us Highway 130, Cranbury, NJ
    - 110 Ocean Ave N Long Branch, NJ 07740
+   - 37 miles, 1 hour, on `i195W` or `NJ18-N`

@@ -6,7 +6,13 @@
    - Confirmation: 96152890
    - Expedia: 72901478626629
    - $896 
-
+## Plan B
+- Radisson Hotel Freehold
+   - $511 total
+   - 16.9 miles 
+- Hampton Inn Old Bridge
+   - $637
+   - 17.7 miles 
 ## Candidates
 - Homewood Suites by Hilton Eatontown
    - 4 Industrial Way E, Eatontown, NJ 07724

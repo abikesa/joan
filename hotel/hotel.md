@@ -1,3 +1,13 @@
+## Final
+- Homewood Suites by Hilton Eatontown
+   - 4 Industrial Way E, Eatontown, NJ 07724
+   - 4.7 miles
+   - 4 PM checkin, 11 AM checkout
+   - Confirmation: 96152890
+   - Expedia: 72901478626629
+   - $896 
+
+## Candidates
 - Homewood Suites by Hilton Eatontown
    - 4 Industrial Way E, Eatontown, NJ 07724
 - Holiday Inn East Windsor: $356

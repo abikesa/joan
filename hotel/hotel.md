@@ -1,3 +1,5 @@
 - Holiday Inn East Windsor: $356
 - Courtyard by Marriott Cranbury South Brunswick: $ 318
 - TownePlace Suites by Marriott Cranburgy South Brunswick: $469
+   - 2535 Us Highway 130, Cranbury, NJ
+   - 110 Ocean Ave N Long Branch, NJ 07740

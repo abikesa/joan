@@ -1,0 +1,3 @@
+- Holiday Inn East Windsor: $356
+- Courtyard by Marriott Cranbury South Brunswick: $ 318
+- TownePlace Suites by Marriott Cranburgy South Brunswick: $469

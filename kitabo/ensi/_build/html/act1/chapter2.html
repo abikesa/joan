@@ -61,6 +61,8 @@
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'act1/chapter2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -380,7 +382,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -396,6 +400,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-st-crispins-day-speech-as-a-loss-function-optimization-problem"><strong>The St. Crispin’s Day Speech as a Loss Function Optimization Problem</strong></a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -407,21 +419,76 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="ecosystem">
 <span id="id1"></span><h1>Ecosystem<a class="headerlink" href="#ecosystem" title="Permalink to this heading">#</a></h1>
+<section id="the-st-crispins-day-speech-as-a-loss-function-optimization-problem">
+<h2><strong>The St. Crispin’s Day Speech as a Loss Function Optimization Problem</strong><a class="headerlink" href="#the-st-crispins-day-speech-as-a-loss-function-optimization-problem" title="Permalink to this heading">#</a></h2>
+<p>Shakespeare’s <em>Henry V</em> delivers one of the most compelling psychological maneuvers in wartime rhetoric: the assertion that fewer soldiers make for a greater victory, that if they die, they are no more than the country can afford to lose, and if they live, their honor will be unmatched. At first glance, the speech reads as a rousing call to arms, a poetic sleight of hand meant to elevate morale in the face of near-certain death. However, if we step back and frame this speech in terms of modern optimization theory, we see that Henry’s argument is not just rhetorical brilliance—it is a strategic loss function engineered to align individual incentives with national survival.</p>
+<p>A loss function quantifies the tradeoffs between competing objectives, allowing us to determine an optimal decision given constraints. In this case, we can identify two competing loss functions operating at different levels: one at the national level, where England must minimize the cost of battle while maximizing the probability of victory, and one at the individual level, where each soldier must weigh their personal risk of death against the potential for immortal honor. These functions can be formalized as follows.</p>
 <div style="display: flex; justify-content: center;">
     <iframe width="80%" height="400px" src="https://www.youtube.com/embed/1VRCfuKEGdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <figure class="align-default" id="rip-dei">
-<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/7/72/Prometheus_and_Atlas%2C_Laconian_black-figure_kylix%2C_by_the_Arkesilas_Painter%2C_560-550_BC%2C_inv._16592_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01069.jpg"><img alt="https://upload.wikimedia.org/wikipedia/commons/7/72/Prometheus_and_Atlas%2C_Laconian_black-figure_kylix%2C_by_the_Arkesilas_Painter%2C_560-550_BC%2C_inv._16592_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01069.jpg" src="https://upload.wikimedia.org/wikipedia/commons/7/72/Prometheus_and_Atlas%2C_Laconian_black-figure_kylix%2C_by_the_Arkesilas_Painter%2C_560-550_BC%2C_inv._16592_-_Museo_Gregoriano_Etrusco_-_Vatican_Museums_-_DSC01069.jpg" style="width: 1%;" /></a>
+<a class="reference internal image-reference" href="https://www.ledr.com/colours/white.jpg"><img alt="https://www.ledr.com/colours/white.jpg" src="https://www.ledr.com/colours/white.jpg" style="width: 1%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 7 </span><span class="caption-text"><em>It Takes AI to Curate Data to Train AI</em>. Isaiah 2:2-4 is the best quoted &amp; also misunderstood article on the conditions of social harmony. Putnams discomforts with the data tells us that he was surprised by what the UN knew half a century earlier and what our biblical prophet articulated several millenia ago. Putnam published his data set from this study in 2001 and subsequently published the full paper in 2007. Putnam has been criticized for the lag between his initial study and his publication of his article. In 2006, Putnam was quoted in the Financial Times as saying he had delayed publishing the article until he could “develop proposals to compensate for the negative effects of diversity” (quote from John Lloyd of Financial Times). In 2007, writing in City Journal, John Leo questioned whether this suppression of publication was ethical behavior for a scholar, noting that “Academics aren’t supposed to withhold negative data until they can suggest antidotes to their findings.” On the other hand, Putnam did release the data in 2001 and publicized this fact. Source: <a class="reference external" href="https://en.wikipedia.org/wiki/Robert_D._Putnam#Diversity_and_trust_within_communities">Wikipedia</a></span><a class="headerlink" href="#rip-dei" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<p>For the nation, the cost of war is defined as the probability of defeat multiplied by the strategic cost of that loss, plus the probability of victory multiplied by the expected number of casualties:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L}_{\text{country}} = p(\text{defeat}) \cdot C_{\text{strategic loss}} + p(\text{victory}) \cdot C_{\text{casualties}}
+\]</div>
+<p>The fewer soldiers who fight, the greater the risk of defeat, increasing <span class="math notranslate nohighlight">\( p(\text{defeat}) \)</span>. Conversely, a higher number of soldiers reduces this probability but increases expected casualties, creating a tradeoff. Henry’s speech implicitly suggests that the army already represents an optimal balance—adding more men would dilute honor without significantly improving victory odds.</p>
+<p>At the individual level, each soldier faces their own risk-reward calculation. Honor is inversely proportional to the number of surviving fighters; the fewer who share in the victory, the greater each individual’s share of glory. However, this must be weighed against the probability of death. We model the honor function as:</p>
+<div class="math notranslate nohighlight">
+\[
+H_{\text{individual}} = \frac{H_{\text{total}}}{N_{\text{fighters}}} - \lambda \cdot p(\text{death})
+\]</div>
+<p>where <span class="math notranslate nohighlight">\( H_{\text{total}} \)</span> is the total glory from the battle, distributed among <span class="math notranslate nohighlight">\( N_{\text{fighters}} \)</span>, and <span class="math notranslate nohighlight">\( \lambda \)</span> is a weighting factor representing the soldier’s aversion to death. The speech’s psychological trick lies in amplifying the perceived value of <span class="math notranslate nohighlight">\( H_{\text{total}} \)</span>, making even a high probability of death appear an acceptable tradeoff.</p>
+<p>To translate this theoretical framework into an operational model, we construct a neural network that encodes these decision layers. The network is structured in five hierarchical levels: Suis, the static belief system; Voir, the information processing layer; Choisis, the decision-making layer; Deviens, which accounts for battlefield adversities; and M’élève, representing final outcomes such as mortality, frailty, and hospitalization. Each node interacts probabilistically, propagating information and decisions through a structured belief system.</p>
+<p>At the core of this network lies an information-processing node that determines how beliefs translate into action. We assign probabilities to each decision path, encoding the tradeoffs between risk and reward. For instance, the probability of a soldier fighting despite a high risk of death is increased by boosting the expected honor payoff. This is captured mathematically by the edge weight ratios:</p>
+<div class="pst-scrollable-table-container"><table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Edge</strong></p></th>
+<th class="head"><p><strong>Weight (P:Q Probability Ratio)</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Fewer Men → Information</p></td>
+<td><p>1:99 (low probability of many survivors)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Greater Honor → Information</p></td>
+<td><p>5:95 (high honor is rare but possible)</p></td>
+</tr>
+<tr class="row-even"><td><p>And If To Live → Information</p></td>
+<td><p>20:80 (probability of survival)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Country Loss → Information</p></td>
+<td><p>51:49 (almost balanced uncertainty)</p></td>
+</tr>
+<tr class="row-even"><td><p>If We Are Mark’d → Information</p></td>
+<td><p>80:20 (strong pre-destined belief)</p></td>
+</tr>
+<tr class="row-odd"><td><p>To Die, We Enough → Information</p></td>
+<td><p>95:5 (certainty in sacrifice)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>These weights encode the psychological calculus of war: the more likely death is, the stronger the justification for it being an “honorable” loss.</p>
+<p>By modeling honor as an exponentially increasing function of scarcity, Henry ensures that desertion becomes suboptimal. A rational soldier stays in the battle if:</p>
+<div class="math notranslate nohighlight">
+\[
+e^{k/N} &gt; p(\text{death}) \cdot C_{\text{expected loss}}
+\]</div>
+<p>which implies that, if the speech succeeds in elevating <span class="math notranslate nohighlight">\( H_{\text{total}} \)</span> sufficiently, even an overwhelming probability of death can be justified. This represents a cooperative equilibrium, where defecting (fleeing) provides no honor, and staying offers the possibility of immortality, albeit at great risk.</p>
 <figure class="align-default" id="nvidia-s-jensen-huang">
 <img alt="https://upload.wikimedia.org/wikipedia/commons/6/68/Thinktank_Birmingham_-_Trevithick_Locomotive%281%29.jpg" src="https://upload.wikimedia.org/wikipedia/commons/6/68/Thinktank_Birmingham_-_Trevithick_Locomotive%281%29.jpg" />
 <figcaption>
 <p><span class="caption-number">Fig. 8 </span><span class="caption-text"><em>Flywheel</em>. CUDA is that thing already. From human programming (static software) to machine programming (dynamic landscape), ecosystem-cost of chips becomes more important than the quality of the chips. Holistic improvements rather than improvement of specific steps in the flywheel process are crucial. Combinatorial advantage (parallel-domain.specific transisters vs. serial-high performance from individual transister) Source: <a class="reference external" href="https://en.wikipedia.org/wiki/Flywheel">Wikipedia</a></span><a class="headerlink" href="#nvidia-s-jensen-huang" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<p>Henry’s speech thus functions as a perfect optimization algorithm, aligning the incentives of individuals with the needs of the state. By reframing survival as secondary to legacy, he forces the soldier into a decision landscape where the logical choice—given the speech’s framing—is to fight. The brilliance of this lies in its information-theoretic compression: Shakespeare reduces battlefield uncertainty into a structured belief system, updating prior probabilities to ensure cohesion.</p>
+<p>Thus, <em>Henry V</em> is not merely a play—it is an early exploration of reinforcement learning under extreme constraints. The St. Crispin’s Day speech is not just a call to arms, but a loss function, precisely engineered to maximize national survival by modulating individual decision-making.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -511,6 +578,7 @@ document.write(`
 </figcaption>
 </figure>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -566,6 +634,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-st-crispins-day-speech-as-a-loss-function-optimization-problem"><strong>The St. Crispin’s Day Speech as a Loss Function Optimization Problem</strong></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
